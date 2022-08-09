@@ -13,11 +13,11 @@ ORDER BY 2,1;
 SELECT DISTINCT rating
 FROM film
 ORDER BY 1 DESC;
---5) Display actors avaliable in DB, ordered by first name and last name
+--5) Display actors available in DB, order by first name and last name
 SELECT actor_id, first_name, last_name
 FROM actor a 
 ORDER BY 2,3;
---6) Conecting first name to last name to create full name column 
+--6) Connecting first name to last name to create full name column
 SELECT actor_id, first_name || ' ' || last_name AS actor_full_name
 FROM actor a 
 ORDER BY 2;
